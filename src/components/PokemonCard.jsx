@@ -4,15 +4,13 @@ import Meta from "antd/lib/card/Meta";
 import { StarOutlined } from "@ant-design/icons";
 
 function PokemonCard(props) {
-    const { name, url } = props;
-    console.log(name, url);
-
+    const { name, url_img } = props;
 
     return (
         <Card
             extra={<StarOutlined />}
             title={name}
-            cover={<img src={url} alt={url} />}
+            cover={<img src={url_img} alt={name} />}
         >
             <Meta description="fire, magic" />
         </Card>

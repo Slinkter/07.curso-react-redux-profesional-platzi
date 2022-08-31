@@ -8,7 +8,13 @@ function PokemonList(props) {
     return (
         <div className="PokemonList">
             {pokemons.map((pokemon) => {
-                return <PokemonCard key={pokemon.name} name={pokemon.name} url={pokemon.url} />;
+                return (
+                    <PokemonCard
+                        key={pokemon.name}
+                        name={pokemon.name}
+                        url_img={pokemon.sprites.front_default}
+                    />
+                );
             })}
         </div>
     );
