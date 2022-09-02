@@ -9,7 +9,6 @@ import {
     compose,
     legacy_createStore as createStore,
 } from "redux";
-
 import thunk from "redux-thunk";
 import { logger } from "./middlewares";
 import rootReducer from "./reducers/rootReducer";

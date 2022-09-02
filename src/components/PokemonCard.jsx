@@ -4,7 +4,8 @@ import Meta from "antd/lib/card/Meta";
 
 import StarButton from "./StarButton";
 import { useDispatch } from "react-redux";
-import { setFavorite } from "../actions";
+import { setFavorite } from "../slices/dataSlice";
+
 
 function PokemonCard(props) {
     const { name, url_img, types, id,favorite } = props;
