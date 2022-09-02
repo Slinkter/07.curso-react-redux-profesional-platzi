@@ -10,9 +10,12 @@ function PokemonList(props) {
             {pokemons.map((pokemon) => {
                 return (
                     <PokemonCard
+                        id={pokemon.id}
                         key={pokemon.name}
                         name={pokemon.name}
                         url_img={pokemon.sprites.front_default}
+                        types={pokemon.types}
+                        favorite={pokemon.favorite}
                     />
                 );
             })}
