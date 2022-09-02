@@ -15,11 +15,8 @@ import { logger } from "./middlewares";
 import rootReducer from "./reducers/rootReducer";
 
 const composeAlt = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
 const componsedEnhacers = composeAlt(applyMiddleware(thunk, logger));
-
 const store = createStore(rootReducer, componsedEnhacers);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <Provider store={store}>

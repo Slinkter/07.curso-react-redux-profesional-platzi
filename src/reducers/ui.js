@@ -9,7 +9,7 @@ export const uiReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_LOADING:
             return state.setIn(["loading"], action.payload);
-        default:
+        default:    
             return state;
     }
 };
