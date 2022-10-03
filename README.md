@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Project 07 B
 
-This project 
+### `imagen`
 
+![image](/src/img.png)
