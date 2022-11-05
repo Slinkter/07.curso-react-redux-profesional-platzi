@@ -1,6 +1,7 @@
 // pokemonSlice
 import { createSlice } from "@reduxjs/toolkit";
 import { createAsyncThunk } from "@reduxjs/toolkit";
+//
 import { getPokemon, getPokemonDetail } from "../api";
 import { setLoading } from "./uiSlice";
 
